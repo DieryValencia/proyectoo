@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida | Jesús Alejandro Aguilar Valenzuela</title>
+    <link rel="stylesheet" href="{% static 'jesus_cv/css/style.css' %}">
+</head>
+<body>
+    <main class="page">
+        <article class="resume-card">
+            <header class="hero">
+                <div class="hero__content">
+                    <p class="eyebrow">Hoja de vida</p>
+                    <h1>Jesús Alejandro Aguilar Valenzuela</h1>
+                    <p class="lead">
+                        Perfil orientado a tecnología, desarrollo de software,
+                        análisis de requerimientos y desarrollo web.
+                    </p>
+                </div>
+            </header>
+
+            <section class="section" aria-labelledby="perfil-title">
+                <h2 id="perfil-title">Perfil profesional</h2>
+                <p>
+                    Tecnólogo en formación profesional con enfoque en soluciones
+                    digitales, análisis de necesidades funcionales y construcción
+                    de experiencias web limpias, ordenadas y orientadas al usuario.
+                    Interesado en aportar en equipos de trabajo donde la estructura,
+                    la calidad del código y la mejora continua sean parte del proceso.
+                </p>
+            </section>
+
+            <section class="section" aria-labelledby="formacion-title">
+                <h2 id="formacion-title">Formacion academica</h2>
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <h3>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
+                        <p class="meta">SENA | 2021 - 2024</p>
+                    </article>
+                    <article class="timeline__item">
+                        <h3>Ingeniería en Ciencia de Datos</h3>
+                        <p class="meta">Corporación Universitaria Iberoamericana | En curso</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="experiencia-title">
+                <h2 id="experiencia-title">Experiencia laboral</h2>
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <h3>2 RIOS INGENIERIA SAS</h3>
+                        <p>
+                            Participación en actividades de soporte operativo y seguimiento
+                            a procesos, con enfoque en orden, cumplimiento y trabajo coordinado.
+                        </p>
+                    </article>
+                    <article class="timeline__item">
+                        <h3>TRANDECOL</h3>
+                        <p>
+                            Apoyo en tareas de organización, atención de requerimientos y
+                            continuidad de procesos en entornos de trabajo estructurados.
+                        </p>
+                    </article>
+                    <article class="timeline__item">
+                        <h3>GMOLAH</h3>
+                        <p>
+                            Participación en funciones asociadas a operación y acompañamiento
+                            de actividades internas, priorizando responsabilidad y adaptación.
+                        </p>
+                    </article>
+                    <article class="timeline__item">
+                        <h3>COLPATRIA / Banco de Bogota</h3>
+                        <p>
+                            Experiencia en contextos corporativos con orientación al servicio,
+                            seguimiento de lineamientos y apoyo a procesos administrativos.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="repos-title">
+                <h2 id="repos-title">Repositorios</h2>
+                <p>
+                    Consulta el repositorio academico del proyecto en
+                    <a href="https://github.com/DieryValencia/proyectoo" target="_blank" rel="noreferrer">
+                        GitHub
+                    </a>.
+                </p>
+            </section>
+
+            <footer class="footer">
+                <p>Versión pública sin datos personales sensibles.</p>
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
