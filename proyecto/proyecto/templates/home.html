@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hojas de Vida del Equipo - Parcial</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Hojas de Vida del Equipo</h1>
+            <p class="subtitle">Portafolio de Profesionales en Desarrollo de Software</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Sección Introducción -->
+        <section class="intro-section">
+            <article class="intro-card">
+                <h2>Bienvenido</h2>
+                <p>
+                    Este proyecto contiene las hojas de vida estáticas de nuestro equipo, desarrolladas como 
+                    parte del parcial de la asignatura. Cada integrante ha preparado su portafolio individual 
+                    con información profesional, formación académica y experiencia laboral.
+                </p>
+                <p class="team-info">
+                    <strong>Total de integrantes:</strong> {{ total_integrantes }}
+                </p>
+            </article>
+        </section>
+
+        <!-- Sección Principal: Hojas de Vida -->
+        <section class="cvs-section">
+            <h2 class="section-title">Selecciona una Hoja de Vida</h2>
+            
+            <!-- Grid de Tarjetas -->
+            <div class="cvs-grid">
+                {% for cv in hojas_de_vida %}
+                <article class="cv-card">
+                    <div class="cv-header">
+                        <h3 class="cv-author">{{ cv.autor }}</h3>
+                        <p class="cv-title">{{ cv.nombre }}</p>
+                    </div>
+                    
+                    <div class="cv-body">
+                        <p class="cv-description">{{ cv.descripcion }}</p>
+                    </div>
+                    
+                    <div class="cv-footer">
+                        <a href="{{ cv.url }}" class="cv-link">Ver Hoja de Vida →</a>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- Sección Alternativa: Menú Desplegable (Complemento) -->
+        <section class="dropdown-section">
+            <h2 class="section-title">Navegación Rápida</h2>
+            <div class="dropdown-container">
+                <select id="cvSelect" class="cv-dropdown" onchange="navigateTo()">
+                    <option value="">-- Selecciona una hoja de vida --</option>
+                    {% for cv in hojas_de_vida %}
+                    <option value="{{ cv.url }}">{{ cv.autor }} - {{ cv.nombre }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Equipo de Desarrollo. Todos los derechos reservados.</p>
+            <p class="footer-note">Proyecto académico - Parcial del curso</p>
+        </div>
+    </footer>
+
+    <script>
+        function navigateTo() {
+            const url = document.getElementById('cvSelect').value;
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+</html>
