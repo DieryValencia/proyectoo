@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida | Nicolas Federico Delgado</title>
+    <link rel="stylesheet" href="{% static 'nicolas_cv/css/style.css' %}">
+</head>
+<body>
+    <main class="page">
+        <article class="resume-card">
+            <header class="hero">
+                <div class="hero__content">
+                    <p class="hero__eyebrow">Hoja de vida publica</p>
+                    <h1>Nicolas Federico Delgado</h1>
+                    <p class="hero__summary">
+                        Perfil orientado a tecnologia, desarrollo de software,
+                        analisis de requerimientos y desarrollo web.
+                    </p>
+                </div>
+            </header>
+
+            <section class="section" aria-labelledby="perfil-title">
+                <div class="section__heading">
+                    <p class="section__label">Perfil</p>
+                    <h2 id="perfil-title">Perfil profesional</h2>
+                </div>
+                <p>
+                    Tecnologo con enfoque en soluciones tecnologicas y construccion
+                    de productos digitales. Su perfil se orienta al desarrollo de
+                    software, el analisis de requerimientos y la creacion de
+                    experiencias web claras, funcionales y bien estructuradas.
+                </p>
+            </section>
+
+            <section class="section" aria-labelledby="formacion-title">
+                <div class="section__heading">
+                    <p class="section__label">Formacion</p>
+                    <h2 id="formacion-title">Formacion academica</h2>
+                </div>
+                <div class="cards-grid">
+                    <article class="info-card">
+                        <h3>Tecnologo en Analisis y Desarrollo de Sistemas de Informacion</h3>
+                        <p class="info-card__meta">SENA | 2021 - 2024</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Ingenieria en Ciencia de Datos</h3>
+                        <p class="info-card__meta">Corporacion Universitaria Iberoamericana | En curso</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="experiencia-title">
+                <div class="section__heading">
+                    <p class="section__label">Experiencia</p>
+                    <h2 id="experiencia-title">Experiencia laboral</h2>
+                </div>
+                <div class="experience-list">
+                    <article class="experience-item">
+                        <h3>2 RIOS INGENIERIA SAS</h3>
+                        <p>
+                            Experiencia en entornos organizados, con acompanamiento a
+                            procesos y seguimiento de requerimientos operativos.
+                        </p>
+                    </article>
+                    <article class="experience-item">
+                        <h3>TRANDECOL</h3>
+                        <p>
+                            Participacion en actividades de soporte y continuidad de
+                            procesos, priorizando orden, responsabilidad y cumplimiento.
+                        </p>
+                    </article>
+                    <article class="experience-item">
+                        <h3>GMOLAH</h3>
+                        <p>
+                            Trabajo en contextos dinamicos con disposicion para adaptarse
+                            a nuevas tareas y necesidades del equipo.
+                        </p>
+                    </article>
+                    <article class="experience-item">
+                        <h3>COLPATRIA / Banco de Bogota</h3>
+                        <p>
+                            Experiencia en ambientes corporativos con enfoque en servicio,
+                            seguimiento de lineamientos y apoyo a procesos internos.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="repos-title">
+                <div class="section__heading">
+                    <p class="section__label">Repositorios</p>
+                    <h2 id="repos-title">Enlace a repositorios</h2>
+                </div>
+                <p>
+                    Repositorio academico del proyecto disponible en
+                    <a href="https://github.com/DieryValencia/proyectoo" target="_blank" rel="noreferrer">
+                        GitHub
+                    </a>.
+                </p>
+            </section>
+
+            <footer class="footer">
+                <p>Version publica sin datos personales sensibles.</p>
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
