@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida | Oskar Ortiz</title>
+    <link rel="stylesheet" href="{% static 'oskar_cv/css/style.css' %}">
+</head>
+<body>
+    <main class="page">
+        <article class="resume-card">
+            <header class="hero">
+                <div class="hero__content">
+                    <p class="eyebrow">Hoja de vida</p>
+                    <h1>Oskar Ortiz</h1>
+                    <p class="lead">
+                        Perfil orientado al desarrollo de software y a la construccion
+                        de soluciones web limpias, funcionales y bien estructuradas.
+                    </p>
+                </div>
+            </header>
+
+            <section class="section" aria-labelledby="perfil-title">
+                <h2 id="perfil-title">Perfil profesional</h2>
+                <p>
+                    Estudiante y desarrollador en formacion con interes en el analisis,
+                    diseno e implementacion de aplicaciones web. Se enfoca en escribir
+                    soluciones ordenadas, mantener buenas practicas de desarrollo y
+                    aportar en equipos que valoran la calidad tecnica y la mejora continua.
+                </p>
+            </section>
+
+            <section class="section" aria-labelledby="formacion-title">
+                <h2 id="formacion-title">Formacion academica</h2>
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <h3>Analisis y desarrollo de software</h3>
+                        <p class="meta">Informacion academica pendiente de ajustar con la hoja de vida fuente</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="experiencia-title">
+                <h2 id="experiencia-title">Experiencia laboral</h2>
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <h3>Experiencia en tecnologia y proyectos academicos</h3>
+                        <p>
+                            La experiencia profesional publicada en esta version se mantiene
+                            resumida y sin datos sensibles. Debe ajustarse con la informacion
+                            definitiva autorizada en el documento de hoja de vida.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section--split" aria-labelledby="repos-title">
+                <div>
+                    <h2 id="repos-title">Repositorios</h2>
+                    <p>
+                        Consulta el trabajo publicado en
+                        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>.
+                    </p>
+                </div>
+                <div class="note-card">
+                    <h3>Privacidad</h3>
+                    <p>
+                        Esta version publica excluye direccion, telefono, documento,
+                        estado civil y referencias personales o laborales.
+                    </p>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>Plantilla estatica renderizada con Django, HTML semantico y CSS independiente.</p>
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
